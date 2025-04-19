@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { validateFile } from "@/lib/api/validators2";
 import { handleError } from "@/lib/api/errors2";
 import { analyzeImage } from "@/lib/api/gemini2";
-import { getUnifiedPrompt } from "../prompts/unified";
+import { getUnifiedPrompt } from "./unified";
 
 export async function POST(request: Request) {
   try {
